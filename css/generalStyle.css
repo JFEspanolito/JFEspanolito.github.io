@@ -1,0 +1,108 @@
+/***************************************** Variables */
+:root{
+    /*------ Colores */
+    --color-purple: #6C63FF;
+    --color-violet: #822E94;
+    --color-dark: #1A1B1C;
+    --color-darkPurple: #261C5C;
+    --color-lightBlue: #D2E0FE;
+    --color-white:white;
+    /*------ Tipografía */
+    --fontSize-25:25px;
+    /*------ Espaciado */
+    --padding-1:10px;
+    --padding-20:18px;
+    --padding-2:25px;
+    --padding-3:35px;
+    --padding-4:45px;
+    --padding-5:50px;
+    /*------ Box */
+    --BoxVar:0px 0 2px 1px var(--color-violet);
+}
+
+/***************************************** NAV */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-darkPurple);
+}
+nav a{
+    text-decoration: none;
+    color: var(--color-lightBlue);
+    font-size: var(--fontSize-25);
+}
+nav a:hover{
+    color: var(--color-violet);
+}
+nav ul {
+    display: flex;
+}
+nav ul li{
+    padding-right: var(--padding-2);
+    list-style: none;
+}
+
+
+
+.cv{
+    color: var(--color-white);
+}
+.nav li a {
+    background-color:transparent;
+    color: var(--color-white);
+    text-decoration:none;
+    display:block;
+    font-size: var(--padding-20);
+}
+
+.nav li a:hover {
+    color: var(--color-purple);
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+/***************************************** BODY */
+body{
+    background-color: var(--color-dark);
+    color: var(--color-lightBlue);
+    font-size: var(--fontSize-25);
+    font-weight: bold;
+    margin:0;
+    margin-bottom: var(--padding-1);
+}
+
+/***************************************** Footer */
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+
+    font-size: var(--fontSize-25);
+    font-weight: bold;
+
+    background-color: var(--color-darkPurple);
+    color: var(--color-lightBlue);
+}
+footer div {
+    margin: var(--padding-2);
+}
+footer a {
+    color: var(--color-lightBlue);
+}
+footer a:hover{
+    color: var(--color-violet);
+}
+footer img {
+    max-width: var(--padding-3);
+    max-height: var(--padding-3);
+}

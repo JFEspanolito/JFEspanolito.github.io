@@ -1,0 +1,52 @@
+.profileImg {
+    max-width: 80%;
+    margin: auto;
+}
+.presentationBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stackImg{
+    max-width: 60%;
+    margin: auto;
+}
+
+.col-4 {
+    margin-right: 200px;
+}
+
+.col-3 h3 {
+    color: var(--color-purple);
+}
+
+.col-4 h1, .col-8 h1 {
+    color: var(--color-purple);
+}
+
+body {
+    font-size: var(--padding-20);
+    color: var(--color-lightBlue);
+}
+
+.presentationBox p {
+    padding: var(--padding-1);
+    border: 1px solid var(--color-violet);
+    font-size: var(--padding-20);
+}
+
+#progressBar {
+    width: 100%;
+    background-color: grey;
+    border-radius: 100px;
+}
+#bar_es, #bar_en{
+    width: 1%;
+    height: 30px;
+    background-color: var(--color-purple);
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border-radius: 100px;
+}
