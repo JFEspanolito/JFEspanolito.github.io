@@ -1,0 +1,50 @@
+.container{
+    padding: var(--padding-4);
+    justify-content: space-between;
+    align-items: center;
+}
+.col-6, .cL{
+    margin-right: 15px;
+}
+.col-6, .cR{
+    margin-left: 15px;
+}
+.briefcaseBlock{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    font-size: 18px;
+    justify-content: space-between;
+    box-shadow: var(--BoxVar);
+}
+.briefcasePost{
+    padding: var(--padding-1);
+}
+.briefcasePostEnd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    width: 100%;
+    background-color: var(--color-white);
+}
+.briefcasePostEnd a{
+    padding-left: 8px;
+}
+.briefcasePostEnd .uipath{
+    color:#FA4616;
+    padding-right: 8px;
+}
+.briefcasePostEnd .platzi{
+    color:#93C63E;
+    padding-right: 8px;
+}
+a {
+    color: var(--color-violet);
+}
+a:hover{
+    color: var(--color-purple);
+}
+h2, h3 {
+    color: var(--color-purple);
+}

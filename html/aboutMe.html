@@ -6,12 +6,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!--CSS-->
 		<link rel="stylesheet" href="../css/generalStyle.css">
-		<link rel="stylesheet" href="../css/generalStyle.css">
 		<link rel="stylesheet" href="../css/animation.css">
 		<link rel="stylesheet" href="../css/grid.css">
-		<link rel="stylesheet" href="../css/blog.css">
+		<link rel="stylesheet" href="../css/aboutMe.css">
 		<!--CSS-->
-		<title>Blog</title>
+		<title>Acerca de mí</title>
 	</head>
 	<body>
 		<!--NAV-->
@@ -52,17 +51,44 @@
 
 		<div class="container">
 			<div class="row">
-				<div class="col-1">
-					<div class="blogPost">
-						<h2>¿Qué es RPA?</h2>
-						<p>En este artículo esta enfocado para las personas que no saben qué es RPA y qué pueden ganar si lo implementan en su negocio. <br>
-						No contiene explicación de código fuente o ¿cómo desarrollar?
-						</p>
-						<div class="blogPostEnd">
-							<a href="https://www.linkedin.com/pulse/rpa-para-principiantes-jorge-falc%25C3%25B3n-1e/" target="_blank">Ver publicación completa</a>
-							Publicado el 11 de marzo de 2020
-						</div>
+				<div class="col-3">
+					<img class="profileImg" src="../img/profile.jpg">
+				</div>
+				<div class="col-3 presentationBox">
+					<div>
+						<h2>Jorge Alejandro Falcón Álvarez</h2>
+						<h3>Desarrollador RPA</h3>
+						<h4>Experiencia: 8 años</h4>
 					</div>
+				</div>
+				<div class="col-6 presentationBox">
+					<div>
+						<p>
+							Actualmente desarrollador RPA con UiPath.
+							<br> Aprendiendo Unity.Anteriormente desarrollador backend y frontend. Creando un juego de mesa y un videojuego. Gamer y siempre abierto a aprender más.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4 presentationBox">
+					<h1>Idiomas</h1>
+					<br>
+					<h3>Español</h3>
+					<br>
+					<div id="progressBar">
+						<div id="bar_es">00%</div>
+					</div>
+					<h3>Inglés</h3>
+					<br>
+					<div id="progressBar">
+						<div id="bar_en">00%</div>
+					</div>
+				</div>
+				<div class="col-8 presentationBox">
+					<h1>Stack Principal</h1>
+					<br>
+					<img class="stackImg" src="../img/UiPath.png" alt="UiPath Logo">
 				</div>
 			</div>
 		</div>
@@ -107,9 +133,8 @@
 
 		<!--Footer-->
 
-
 		<!--JS-->
-
+		<script src="../js/aboutMe.js"></script>
 		<!--JS-->
 	</body>
 </html>
