@@ -1,12 +1,15 @@
 /***************************************** Variables */
 :root{
     /*------ Colores */
-    --color-purple: #6C63FF;
-    --color-violet: #822E94;
-    --color-dark: #1A1B1C;
-    --color-darkPurple: #261C5C;
-    --color-lightBlue: #D2E0FE;
-    --color-white:white;
+    --color-Secundario: #FFC70D;
+    --color-Secundario2: #C2CDFF;
+    --color-Background: #30003a;
+    --color-Background2: #020121;
+    --color-Primario: #8904A5;
+    --color-white:#FFFFFF;
+    --color-black:#000000;
+    --color-Negative: #820202;
+    --color-Positive: #00E908;
     /*------ Tipografía */
     --fontSize-25:25px;
     /*------ Espaciado */
@@ -17,7 +20,7 @@
     --padding-4:45px;
     --padding-5:50px;
     /*------ Box */
-    --BoxVar:0px 0 5px 3px var(--color-violet);
+    --BoxVar:0px 0 5px 3px var(--color-Background);
 }
 
 /***************************************** NAV */
@@ -25,15 +28,15 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-darkPurple);
+    background-image: linear-gradient(var(--color-Background), var(--color-Background2));
 }
 nav a{
     text-decoration: none;
-    color: var(--color-lightBlue);
+    color: var(--color-Secundario);
     font-size: var(--fontSize-25);
 }
 nav a:hover{
-    color: var(--color-violet);
+    color: var(--color-Secundario2);
 }
 nav ul {
     display: flex;
@@ -43,42 +46,45 @@ nav ul li{
     list-style: none;
 }
 
-
-
-.cv{
+nav li button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
     color: var(--color-white);
 }
+nav li button:hover {
+    color: var(--color-Positive);
+}
+
 .nav li a {
     background-color:transparent;
     color: var(--color-white);
     text-decoration:none;
-    display:block;
     font-size: var(--padding-20);
 }
-
 .nav li a:hover {
-    color: var(--color-purple);
-}
-
-.nav li ul {
-    display:none;
-    position:absolute;
-}
-
-.nav li:hover > ul {
-    display:block;
+    color: var(--color-Positive);
 }
 
 /***************************************** BODY */
 body{
-    background-color: var(--color-dark);
-    color: var(--color-lightBlue);
+    background-color: var(--color-Background2);
+    color: var(--color-Secundario2);
     font-size: var(--fontSize-25);
     font-weight: bold;
     margin:0;
     margin-bottom: var(--padding-1);
 }
 
+body.es [lang=en] {
+    display: none;
+}
+body.en [lang=es] {
+    display: none;
+}
 /***************************************** Footer */
 footer {
     position: fixed;
@@ -90,17 +96,17 @@ footer {
     font-size: var(--fontSize-25);
     font-weight: bold;
 
-    background-color: var(--color-darkPurple);
-    color: var(--color-lightBlue);
+    background-image: linear-gradient(var(--color-Background2), var(--color-Background));
+    color: var(--color-Primario);
 }
 footer div {
     margin: var(--padding-2);
 }
 footer a {
-    color: var(--color-lightBlue);
+    color: var(--color-Secundario);
 }
 footer a:hover{
-    color: var(--color-violet);
+    color: var(--color-Background);
 }
 footer img {
     max-width: var(--padding-3);

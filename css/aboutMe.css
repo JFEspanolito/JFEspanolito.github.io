@@ -17,36 +17,37 @@
     margin-right: 200px;
 }
 
-.col-3 h3 {
-    color: var(--color-purple);
+.col-6 h3 {
+    color: var(--color-Primario);
 }
 
 .col-4 h1, .col-8 h1 {
-    color: var(--color-purple);
+    color: var(--color-Secundario);
 }
 
 body {
     font-size: var(--padding-20);
-    color: var(--color-lightBlue);
+    color: var(--color-Secundario2);
 }
 
 .presentationBox p {
     padding: var(--padding-1);
-    border: 1px solid var(--color-violet);
+    /* border: 1px solid var(--color-Primario); */
     font-size: var(--padding-20);
 }
 
 #progressBar {
     width: 100%;
-    background-color: grey;
+    background-color: Transparent;
+    background-repeat:no-repeat;
     border-radius: 100px;
 }
 #bar_es, #bar_en{
     width: 1%;
     height: 30px;
-    background-color: var(--color-purple);
+    background-color: var(--color-Secundario);
     text-align: center;
     line-height: 30px;
-    color: white;
+    color: var(--color-black);
     border-radius: 100px;
 }

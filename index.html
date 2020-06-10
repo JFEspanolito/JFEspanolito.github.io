@@ -8,39 +8,43 @@
     	<link rel="stylesheet" href="css/generalStyle.css">
     	<link rel="stylesheet" href="css/animation.css">
 		<!--CSS-->
-		<title>Inicio</title>
+		<title lang="es">Inicio</title>
 	</head>
-	<body>
+	<body class="es">
 		<!--NAV-->
 
 		<nav class="fadeDown">
 			<ul>
 				<li>
-					<a href="index.html">Inicio</a>
+					<a lang="es" href="index.html">Inicio</a>
+					<a lang="en" href="index.html">Home</a>
 				</li>
 				<li>
-					<a href="html/aboutMe.html">Acerca de mí</a>
+					<a lang="es" href="aboutMe.html">Acerca de mí</a>
+					<a lang="en" href="aboutMe.html">About me</a>
 				</li>
 				<li>
-					<a href="html/briefcase.html">Portafolio</a>
+					<a lang="es" href="briefcase.html">Portafolio</a>
+					<a lang="en" href="briefcase.html">Briefcase</a>
 				</li>
 				<li>
-					<a href="html/Blog.html">Blog</a>
+					<a href="Blog.html">Blog</a>
 				</li>
 			</ul>
 			<ul class="nav">
 				<li>
-					<div class="cv">Curriculum</div>
-					<ul>
-						<li>
-							<a href="files/Esp_JAFA_CV.pdf">ES</a>
-						</li>
-						<li>
-							<a href="files/Eng_JAFA_CV.pdf">EN</a>
-						</li>
-					</ul>
+					<a href="files/Esp_JAFA_CV.pdf">CV_ES</a>
+				</li>
+				<li>
+					<a href="files/Eng_JAFA_CV.pdf">CV_EN</a>
 				</li>
 			</ul>
+			<ul class="nav">
+				<li>
+					<button class="btnLanguage" onclick="document.body.className='en'">English</button>
+					<button class="btnLanguage" onclick="document.body.className='es'">Español</button>
+				</li>
+		</ul>
 		</nav>
 
 		<!--NAV-->
@@ -50,7 +54,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-1">
-					<p>Esta sitio web está en construcción mientras práctico y aprendo HTML, CSS y JavaScript, ya contiene información en algunos sub sitios.</p>
+					<p lang="en">This site is in process, it is created during the course of HTML and CSS. <br> The information contained in the page is real.</p>
+					<p lang="es">Este sitio está en proceso, se crea durante la realización de un curso de HTML y CSS.<br>La información contenida en la página es real.</p>
 				</div>
 			</div>
 		</div>

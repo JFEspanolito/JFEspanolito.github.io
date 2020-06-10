@@ -5,26 +5,29 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!--CSS-->
-		<link rel="stylesheet" href="../css/generalStyle.css">
-		<link rel="stylesheet" href="../css/animation.css">
-		<link rel="stylesheet" href="../css/grid.css">
-		<link rel="stylesheet" href="../css/AcercaDe.css">
+		<link rel="stylesheet" href="css/generalStyle.css">
+		<link rel="stylesheet" href="css/animation.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/aboutMe.css">
 		<!--CSS-->
 		<title>Acerca de mí</title>
 	</head>
-	<body>
+	<body class="es">
 		<!--NAV-->
 
 		<nav class="fadeDown">
 			<ul>
 				<li>
-					<a href="../index.html">Inicio</a>
+					<a lang="es" href="index.html">Inicio</a>
+					<a lang="en" href="index.html">Home</a>
 				</li>
 				<li>
-					<a href="AcercaDe.html">Acerca de mí</a>
+					<a lang="es" href="aboutMe.html">Acerca de mí</a>
+					<a lang="en" href="aboutMe.html">About me</a>
 				</li>
 				<li>
-					<a href="Portafolio.html">Portafolio</a>
+					<a lang="es" href="briefcase.html">Portafolio</a>
+					<a lang="en" href="briefcase.html">Briefcase</a>
 				</li>
 				<li>
 					<a href="Blog.html">Blog</a>
@@ -32,17 +35,20 @@
 			</ul>
 			<ul class="nav">
 				<li>
-					<div class="cv">Curriculum</div>
-					<ul>
-						<li>
-							<a href="../files/Esp_JAFA_CV.pdf">ES</a>
-						</li>
-						<li>
-							<a href="../files/Eng_JAFA_CV.pdf">EN</a>
-						</li>
-					</ul>
+					<li>
+						<a href="files/Esp_JAFA_CV.pdf">CV_ES</a>
+					</li>
+					<li>
+						<a href="files/Eng_JAFA_CV.pdf">CV_EN</a>
+					</li>
 				</li>
 			</ul>
+			<ul class="nav">
+				<li>
+					<button class="btnLanguage" onclick="document.body.className='en'">English</button>
+					<button class="btnLanguage" onclick="document.body.className='es'">Español</button>
+				</li>
+		</ul>
 		</nav>
 
 		<!--NAV-->
@@ -52,20 +58,20 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-3">
-					<img class="profileImg" src="../img/profile.jpg">
+					<img class="profileImg" src="img/profile.jpg">
 				</div>
-				<div class="col-3 presentationBox">
+				<div class="col-6 presentationBox">
 					<div>
-						<h2>Jorge Alejandro Falcón Álvarez</h2>
-						<h3>Desarrollador RPA</h3>
-						<h4>Experiencia: 8 años</h4>
+						<h2 class="line1 autoType1">Jorge A. Falcon Alvarez</h2>
+						<h3 class="line1 autoType2">Desarrollador RPA</h3>
+						<h4 class="line1 autoType3">Experiencia: 8 años</h4>
 					</div>
 				</div>
 				<div class="col-6 presentationBox">
 					<div>
 						<p>
-							Actualmente desarrollador RPA con UiPath.
-							<br> Aprendiendo Unity.Anteriormente desarrollador backend y frontend. Creando un juego de mesa y un videojuego. Gamer y siempre abierto a aprender más.
+							<b>Actualmente desarrollador RPA con UiPath.</b>
+							<br> Anteriormente desarrollador backend. Creando un juego de mesa y un videojuego. Gamer y siempre buscando a aprender más.
 						</p>
 					</div>
 				</div>
@@ -88,7 +94,7 @@
 				<div class="col-8 presentationBox">
 					<h1>Stack Principal</h1>
 					<br>
-					<img class="stackImg" src="../img/UiPath.png" alt="UiPath Logo">
+					<img class="stackImg" src="img/UiPath.png" alt="UiPath Logo">
 				</div>
 			</div>
 		</div>
@@ -101,32 +107,32 @@
 		<footer class="fadeInUp">
 			<div class="Linkedin">
 				<a href="https://www.linkedin.com/in/jfespanolito/" target="_blank" title="LinkedIn">
-					<img src="../img/LinkedIn.png" alt="LinkedIn logo">
+					<img src="img/LinkedIn.png" alt="LinkedIn logo">
 				</a>
 			</div>
 			<div class="Twiiter">
 				<a href="https://twitter.com/JFEspanolito" target="_blank" title="Twiiter">
-					<img src="../img/Twiiter.png" alt="Twiiter logo">
+					<img src="img/Twiiter.png" alt="Twiiter logo">
 				</a>
 			</div>
 			<div class="Email">
 				<a href="mailto:jafa.jfalcon@gmail.com" title="Email">
-					<img src="../img/Email.png" alt="Email logo">
+					<img src="img/Email.png" alt="Email logo">
 				</a>
 			</div>
 			<div class="GitHub">
 				<a href="https://github.com/JFEspanolito" target="_blank" title="GitHub">
-					<img src="../img/GitHub.png" alt="GitHub logo">
+					<img src="img/GitHub.png" alt="GitHub logo">
 				</a>
 			</div>
 			<div class="Plazi">
 				<a href="https://platzi.com/@jfespanolito" target="_blank" title="Plazi">
-					<img src="../img/Platzi.png" alt="Plazi logo">
+					<img src="img/Platzi.png" alt="Plazi logo">
 				</a>
 			</div>
 			<div class="Wakatime">
 				<a href="https://wakatime.com/@JFEspanolito" target="_blank" title="Wakatime">
-					<img src="../img/Wakatime.svg" alt="Wakatime logo">
+					<img src="img/Wakatime.svg" alt="Wakatime logo">
 				</a>
 			</div>
 		</footer>
@@ -134,7 +140,7 @@
 		<!--Footer-->
 
 		<!--JS-->
-		<script src="../js/AcercaDe.js"></script>
+		<script src="js/aboutMe.js"></script>
 		<!--JS-->
 	</body>
 </html>

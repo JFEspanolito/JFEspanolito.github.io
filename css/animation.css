@@ -1,3 +1,4 @@
+/***************************************** NAV and FOOTER */
 .fadeIn{
   -webkit-animation-duration: 4s;
   animation-duration: 4s;
@@ -58,4 +59,41 @@
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
   }
+}
+
+/***************************************** Text */
+.line1{
+  border-right: 2px solid #ffffffbf;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+.autoType1{
+  animation: typewriter1 3s steps(44) 1s 1 normal both,
+  blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter1{
+  from{width: 0;}
+  to{width: 10.5em;}
+}
+.autoType2{
+  animation: typewriter2 3s steps(44) 1s 1 normal both,
+  blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter2{
+  from{width: 0;}
+  to{width: 8.5em;}
+}
+.autoType3{
+  animation: typewriter3 3s steps(44) 1s 1 normal both,
+  blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter3{
+  from{width: 0;}
+  to{width: 8.5em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: #ffffffbf;}
+  to{border-right-color: transparent;}
 }

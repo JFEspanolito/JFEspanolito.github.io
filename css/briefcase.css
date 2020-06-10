@@ -16,6 +16,7 @@
     font-size: 18px;
     justify-content: space-between;
     box-shadow: var(--BoxVar);
+    color: var(--color-Secundario2);
 }
 .briefcasePost{
     padding: var(--padding-1);
@@ -26,7 +27,6 @@
     align-items: center;
     font-size: 18px;
     width: 100%;
-    background-color: var(--color-white);
 }
 .briefcasePostEnd a{
     padding-left: 8px;
@@ -40,11 +40,11 @@
     padding-right: 8px;
 }
 a {
-    color: var(--color-violet);
+    color: var(--color-Secundario2);
 }
 a:hover{
-    color: var(--color-purple);
+    color: var(--color-Positive);
 }
 h2, h3 {
-    color: var(--color-purple);
+    color: var(--color-Primario);
 }
